@@ -3,6 +3,7 @@ import {
 import { useHistory } from "react-router-dom";
 
 import isAuth, { userType } from "../lib/isAuth";
+import logo from  "./logo.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +31,7 @@ const Navbar = (props) => {
     <AppBar position="fixed" background= "transparent">
       <Toolbar style={{minHeight: "80px"}}>
         <Typography variant="h6" className={classes.title} style={{fontSize: "32px",fontWeight: "800"}}>
-        <img src="https://www.linkpicture.com/q/job-search.png" width="30px" height="auto"></img>JOB O HUNT 
+        <img src={logo} width="60px" height="auto"></img>HireON
         </Typography>
         <div style={{marginTop:"20px"}}>
         {isAuth() ? (

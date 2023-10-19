@@ -4,7 +4,7 @@
   "description": "node js app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npx nodemon server.js"
   },
   "author": "",
   "license": "ISC",

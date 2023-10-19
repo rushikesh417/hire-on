@@ -110,8 +110,7 @@ const Login = (props) => {
   ) : (
     <Grid container direction="row" >
       <div style={{alignItems:"center", marginLeft:"15%",marginTop:""}}>
-        <img src={img}
-          width="400px" height="450px" ></img>
+        <img src={img} width="400px" height="450px" ></img>
       </div>
     <Paper elevation={3} className={classes.body}>
       

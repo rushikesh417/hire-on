@@ -7,11 +7,11 @@ const path = require('path');
 require("dotenv").config()
 const cloudinary = require("cloudinary");
 
-cloudinary.config({
-  cloud_name:"jobohunt",
-  api_key:"937199435421856",
-  api_secret:"gcfIlECosmTamuJ50-1A27VG8T8"
-})
+cloudinary.config({ 
+  cloud_name: 'dzesgadl1', 
+  api_key: '373352627211632', 
+  api_secret: 'mZTBU0EHAWr3jt2z4nhDHvbqfPE'
+});
 //  const pipeline = promisify(require("stream").pipeline);
 
 const router = express.Router();
@@ -89,7 +89,7 @@ router.post("/resume", (req, res) => {
               message: 'Error: No File Selected!'
             });
           }
-          console.log(result.secure_url) ;
+          // console.log(result.secure_url) ;
           console.log("file uploaded")
           res.send({
             message:"File uploaded successfully!",
